@@ -1,0 +1,33 @@
+# This file was generated based on a working environment to ensure stability.
+# To install, create a virtual environment and run:
+# pip install -r requirements.txt
+
+# --- Core Data Science & Machine Learning ---
+numpy==2.3.1
+pandas==2.3.0
+scikit-learn==1.7.0
+scipy==1.16.0
+
+# --- PyTorch Framework ---
+# Pinned to the specific CPU versions from your environment for consistency.
+# --- Pip Options ---
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# --- PyTorch Packages ---
+torch==2.7.1+cpu
+torchvision==0.22.1+cpu
+torchaudio==2.7.1+cpu
+
+# --- Data Visualization ---
+# Versions for plotting libraries are generally flexible.
+matplotlib
+seaborn
+
+# --- Specialized Libraries ---
+biopython==1.85         # For parsing FASTA sequence files
+filelock==3.13.1        # For preventing race conditions when writing logs
+graphviz                # For generating the blueprint diagram (see note below)
+
+# --- Optional Performance Extension ---
+# The scripts will run without this, but it was in your environment.
+intel_extension_for_pytorch==2.7.0
